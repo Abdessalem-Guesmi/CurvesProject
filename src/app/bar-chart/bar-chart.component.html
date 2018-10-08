@@ -1,0 +1,50 @@
+<!-- <button type="submit" class="btn btn-success" routerLink="/barChart" (click)="getCurves()">barChart</button> -->
+<p>
+
+    World population estimates from 1800 to 2100, based on "high", "medium" and "low" United Nations projections in 2015 and UN historical estimates for pre-1950 data Population growth graph generated with data supplied by World Bank, via Google World population
+    percentage by country In demographics, the world population is the total number of humans currently living, and was estimated to have reached 7.6 billion people as of May 2018.[1] It took over 200,000 years of human history for the world's population
+    to reach 1 billion;[2] and only 200 years more to reach 7 billion.[3] World population has experienced continuous growth since the end of the Great Famine of 1315–17 and the Black Death in 1350, when it was near 370 million.[4] The highest population
+    growth rates – global population increases above 1.8% per year – occurred between 1955 and 1975, peaking to 2.06% between 1965 and 1970.[5] The growth rate has declined to 1.18% between 2010 and 2015 and is projected to decline further in the course
+    of the 21st century.[5] Total annual births were highest in the late 1980s at about 139 million,[6] and as of 2011 were expected to remain essentially constant at a level of 135 million,[7] while deaths numbered 56 million per year and were expected
+    to increase to 80 million per year by 2040.[8] The median age of the world's population was estimated to be 30.4 years in 2018.[9]
+
+</p>
+
+<a routerLink="/Population" routerLinkActive="active" (click)="getCurves()">see the Curves...</a>
+<div>
+    <div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <div *ngIf="chart">
+
+                <canvas id="bar-chart" width="20" height="10">{{chart}}</canvas>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <div *ngIf="chart2">
+
+                <canvas id="Pie-chart" width="20" height="10">{{chart2}}</canvas>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <div *ngIf="chart3">
+
+                <canvas id="doughnut-chart" width="20" height="10">{{chart3}}</canvas>
+
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <div *ngIf="chart4">
+
+                <canvas id="horizontalBar-chart" width="20" height="10">{{chart4}}</canvas>
+
+            </div>
+        </div>
+
+    </div>
